@@ -7,7 +7,7 @@
     <string name="txtNotas">Notas</string>
     <string name="item_titulo">Título del libro</string>
     <string name="item_descripcion">Descripción</string>
-
+    <string name="agregar">Boton agregar</string>
     <string name="txtActualizarNota">Actualizar nota</string>
 
 </resources>

@@ -3,10 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <!--tools:context=".MainActivity"-->
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    tools:context=".LibreriaActivity">
 
     <TextView
         android:id="@+id/txtNotas"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/notasRv"
+        android:id="@+id/librosRv"
         android:layout_below="@id/txtNotas"
         android:padding="15dp"
         tools:listitem="@layout/itemlibro"
@@ -37,10 +37,10 @@
         android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
+        android:contentDescription="@string/agregar"
         android:src="@drawable/ic_agregar_nota"
         android:backgroundTint="@color/black"
         app:tint="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-
 </RelativeLayout>

@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="15dp">
-    <!--tools:context=".AgregarNotaActivity"-->
+    tools:context=".AgregarNotaActivity">
 
     <TextView
         android:id="@+id/txtAgregarNota"
-        android:text="@string/txtAgregarNota"
+        android:text="Agregar libro"
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,12 +44,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-
-
-
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/TILTitulo"
@@ -60,11 +56,27 @@
 
         <EditText
             android:id="@+id/etDescripcion"
-            android:hint="@string/etDescripcion"
-            android:textSize="20sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:hint="Nombre del Autor"
+            android:textSize="20sp" />
 
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayout"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/etPaginas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Numero de paginas"
+            android:textSize="20sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
