@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/title_txt"
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/purple_500"
+        android:text="Retos de programacion"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Reto1_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Reto 1"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+             />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Reto2_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Reto 2"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+             />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Reto3_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Reto 3"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Reto4_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Reto 4"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Reto5_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Reto 5"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Reto6_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Reto 6"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Reto7_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Reto 7"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Reto8_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Reto 8"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Reto9_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Reto 2"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Reto10_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Reto 10"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Reto11_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Reto 11"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
