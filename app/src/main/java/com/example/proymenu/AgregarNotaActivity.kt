@@ -1,4 +1,4 @@
-package com.redsystemstudio.notasapp_sqlite
+/*package com.redsystemstudio.notasapp_sqlite
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -38,4 +38,4 @@ class AgregarNotaActivity : AppCompatActivity() {
         finishAffinity()
         Toast.makeText(applicationContext, "Se ha agregado la nota",Toast.LENGTH_SHORT).show()
     }
-}
+}*/

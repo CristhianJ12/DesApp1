@@ -1,4 +1,4 @@
-package com.redsystemstudio.notasapp_sqlite
+/*package com.redsystemstudio.notasapp_sqlite
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -40,4 +40,4 @@ class ActualizarNotaActivity : AppCompatActivity() {
             Toast.makeText(this, "La nota se ha actualizado con éxito", Toast.LENGTH_SHORT).show()
         }
     }
-}
+}*/
