@@ -21,125 +21,136 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Reto1_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:text="Reto 1"
-            android:textColor="@color/purple_500"
-            android:textSize="20sp"
-             />
+        app:layout_constraintTop_toBottomOf="@id/title_txt"
+        app:layout_constraintVertical_bias="1.0">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Reto2_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:text="Reto 2"
-            android:textColor="@color/purple_500"
-            android:textSize="20sp"
-             />
+        <LinearLayout
+            android:layout_width="83dp"
+            android:layout_height="532dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Reto3_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:text="Reto 3"
-            android:textColor="@color/purple_500"
-            android:textSize="20sp"
-            />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Reto1_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                android:text="Reto 1"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Reto4_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:text="Reto 4"
-            android:textColor="@color/purple_500"
-            android:textSize="20sp"
-            />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Reto2_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                android:text="Reto 2"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Reto5_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:text="Reto 5"
-            android:textColor="@color/purple_500"
-            android:textSize="20sp"
-            />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Reto3_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                android:text="Reto 3"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Reto6_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:text="Reto 6"
-            android:textColor="@color/purple_500"
-            android:textSize="20sp"
-            />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Reto4_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                android:text="Reto 4"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Reto7_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:text="Reto 7"
-            android:textColor="@color/purple_500"
-            android:textSize="20sp"
-            />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Reto5_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                android:text="Reto 5"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Reto8_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:text="Reto 8"
-            android:textColor="@color/purple_500"
-            android:textSize="20sp"
-            />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Reto6_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                android:text="Reto 6"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Reto9_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:text="Reto 2"
-            android:textColor="@color/purple_500"
-            android:textSize="20sp"
-            />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Reto7_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                android:text="Reto 7"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Reto10_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:text="Reto 10"
-            android:textColor="@color/purple_500"
-            android:textSize="20sp"
-            />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Reto8_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                android:text="Reto 8"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/Reto11_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:text="Reto 11"
-            android:textColor="@color/purple_500"
-            android:textSize="20sp"
-            />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Reto9_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                android:text="Reto 2"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
 
-    </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Reto10_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                android:text="Reto 10"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Reto11_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                android:text="Reto 11"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

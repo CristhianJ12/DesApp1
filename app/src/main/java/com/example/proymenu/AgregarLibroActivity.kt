@@ -6,19 +6,20 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.proymenu.databinding.ActivityAgregarNotaBinding
+import com.example.proymenu.databinding.ActivityAgregarLibroBinding
 
-class AgregarNotaActivity : AppCompatActivity() {
+
+class AgregarLibroActivity : AppCompatActivity() {
 
     //REVISAR CON CHATGPT
 
-    private lateinit var binding: ActivityAgregarNotaBinding
+    private lateinit var binding: ActivityAgregarLibroBinding
     private lateinit var db: LibrosDbHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityAgregarNotaBinding.inflate(layoutInflater)
+        binding = ActivityAgregarLibroBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         db = LibrosDbHelper(this)
@@ -37,7 +38,7 @@ class AgregarNotaActivity : AppCompatActivity() {
             val libros = Libros(0,title, autor, pages)
             db.insertLibro(libros)
             finish()
-            Toast.makeText( this,"Libro saverd", Toast.LENGTH_SHORT).show()
+            Toast.makeText( this,"Libro saved", Toast.LENGTH_SHORT).show()
         }
     }
 }

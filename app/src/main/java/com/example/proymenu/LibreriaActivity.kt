@@ -29,7 +29,7 @@ class LibreriaActivity : AppCompatActivity() {
         binding.librosRv.adapter = librosAdapter
 
         binding.FABAgregarNota.setOnClickListener{
-            val intent = Intent(this, AgregarNotaActivity::class.java)
+            val intent = Intent(this, AgregarLibroActivity::class.java)
             startActivity(intent)
         }
 

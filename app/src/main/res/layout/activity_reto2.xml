@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:id="@+id/main"
+    tools:context=".Retos.Reto2">
+
+        <!-- Ingreso de la edad -->
+        <EditText
+            android:id="@+id/edadInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Ingresa tu edad"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <!-- Ingreso del precio de la entrada -->
+        <EditText
+            android:id="@+id/precioInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Ingresa el precio de la entrada"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Botón para calcular -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/calcularButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:layout_marginTop="16dp" />
+
+        <!-- Texto para mostrar el descuento -->
+        <TextView
+            android:id="@+id/resultadoDescuento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="El descuento es: "
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Texto para mostrar el total a pagar -->
+        <TextView
+            android:id="@+id/resultadoTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="El total a pagar es: "
+            android:textSize="18sp"
+            android:layout_marginTop="8dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,5 +1,6 @@
 package com.example.proymenu
 
+import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
@@ -59,5 +60,42 @@ class LibrosDbHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         cursor.close()
         db.close()
         return librosList
+    }
+
+    fun updateLibro(libro: Libros){
+        val db = writableDatabase
+        val values = ContentValues().apply {
+            put(COLUMN_TITLE, libro.title)
+            put(COLUMN_AUTOR, libro.autor)
+            put(COLUMN_PAGES, libro.pages)
+        }
+        val whereClause = "$COLUMN_ID = ?"
+        val whereArgs = arrayOf(libro.id.toString())
+        db.update(TABLE_NAME,values, whereClause, whereArgs)
+        db.close()
+    }
+
+    fun getLibroByID(libroId: Int): Libros{
+        val db = readableDatabase
+        val query = "SELECT * FROM $TABLE_NAME WHERE $COLUMN_ID = $libroId"
+        val cursor = db.rawQuery(query, null)
+        cursor.moveToFirst()
+
+        val id = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_ID))
+        val title = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_TITLE))
+        val autor = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_AUTOR))
+        val pages = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_PAGES))
+
+        cursor.close()
+        db.close()
+        return Libros(id,title,autor,pages)
+    }
+
+    fun deleteLibro(libroId: Int){
+        val db = writableDatabase
+        val whereclause = "$COLUMN_ID = ?"
+        val whereArgs = arrayOf(libroId.toString())
+        db.delete(TABLE_NAME, whereclause, whereArgs)
+        db.close()
     }
 }
