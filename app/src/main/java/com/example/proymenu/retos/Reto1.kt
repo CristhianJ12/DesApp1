@@ -1,4 +1,4 @@
-package com.example.proymenu.Retos
+package com.example.proymenu.retos
 
 import android.os.Bundle
 import android.widget.EditText

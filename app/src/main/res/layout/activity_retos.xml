@@ -127,7 +127,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="@color/white"
-                android:text="Reto 2"
+                android:text="Reto 9"
                 android:textColor="@color/purple_500"
                 android:textSize="20sp" />
 
@@ -138,16 +138,6 @@
                 android:layout_marginBottom="16dp"
                 android:background="@color/white"
                 android:text="Reto 10"
-                android:textColor="@color/purple_500"
-                android:textSize="20sp" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/Reto11_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:background="@color/white"
-                android:text="Reto 11"
                 android:textColor="@color/purple_500"
                 android:textSize="20sp" />
 

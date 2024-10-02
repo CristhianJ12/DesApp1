@@ -37,4 +37,5 @@ class MenuActivity : AppCompatActivity() {
         val lanzar2 = Intent(this, RetosActivity::class.java)
         startActivity(lanzar2)
     }
+
 }

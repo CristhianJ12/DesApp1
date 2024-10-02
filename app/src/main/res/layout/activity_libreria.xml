@@ -10,7 +10,7 @@
 
     <TextView
         android:id="@+id/txtNotas"
-        android:text="@string/txtNotas"
+        android:text="Libreria"
         android:layout_alignParentTop="true"
         android:layout_marginTop="15dp"
         android:layout_marginStart="15dp"

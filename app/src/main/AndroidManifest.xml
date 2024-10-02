@@ -13,10 +13,34 @@
         android:theme="@style/Theme.ProyMenu"
         tools:targetApi="31">
         <activity
-            android:name=".Retos.Reto2"
+            android:name=".retos.Reto10"
             android:exported="false" />
         <activity
-            android:name=".Retos.Reto1"
+            android:name=".retos.Reto9"
+            android:exported="false" />
+        <activity
+            android:name=".retos.Reto8"
+            android:exported="false" />
+        <activity
+            android:name=".retos.Reto7"
+            android:exported="false" />
+        <activity
+            android:name=".retos.Reto6"
+            android:exported="false" />
+        <activity
+            android:name=".retos.Reto5"
+            android:exported="false" />
+        <activity
+            android:name=".retos.Reto4"
+            android:exported="false" />
+        <activity
+            android:name=".retos.Reto3"
+            android:exported="false" />
+        <activity
+            android:name=".retos.Reto2"
+            android:exported="false" />
+        <activity
+            android:name=".retos.Reto1"
             android:exported="false" />
         <activity
             android:name=".ActualizarLibroActivity"

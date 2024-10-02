@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="30dp"
+    android:padding="20dp"
+    tools:context=".retos.Reto5">
+
+    <EditText
+        android:id="@+id/sueldo_basico"
+        android:hint="Ingresa tu sueldo básico"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Ingreso de años de antigüedad -->
+    <EditText
+        android:id="@+id/antiguedad"
+        android:hint="Ingresa tus años de antigüedad"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botón para calcular el total -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_calcular_total"
+        android:text="Calcular Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Mostrar el resultado final -->
+    <TextView
+        android:id="@+id/resultado_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

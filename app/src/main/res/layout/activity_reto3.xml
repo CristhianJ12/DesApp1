@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="30dp"
+    tools:context=".retos.Reto3">
+
+    <EditText
+        android:id="@+id/edad_input"
+        android:hint="Ingresa tu edad"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:minHeight="48dp"/>
+
+    <!-- Botón para validar la edad -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_verificar"
+        android:text="Verificar Edad"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Texto que muestra si es mayor o menor de edad -->
+    <TextView
+        android:id="@+id/resultado_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="30dp"
+    android:padding="20dp"
+    tools:context=".retos.Reto9">
+
+    <EditText
+        android:id="@+id/numero_input"
+        android:hint="Ingresa un número (1-7)"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botón para evaluar el día -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_evaluar_dia"
+        android:text="Evaluar Día"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Mostrar el resultado -->
+    <TextView
+        android:id="@+id/resultado_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
