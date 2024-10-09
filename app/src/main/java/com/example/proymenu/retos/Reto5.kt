@@ -27,39 +27,31 @@ class Reto5 : AppCompatActivity() {
         val btnCalcularTotal = findViewById<MaterialButton>(R.id.btn_calcular_total)
         val resultadoText = findViewById<TextView>(R.id.resultado_text)
 
-        // Configuración del botón para calcular el total
         btnCalcularTotal.setOnClickListener {
-            // Obtener los valores ingresados
             val sueldoBasicoTexto = sueldoBasicoInput.text.toString()
             val antiguedadTexto = antiguedadInput.text.toString()
 
-            // Validar que los campos no estén vacíos
             if (sueldoBasicoTexto.isEmpty() || antiguedadTexto.isEmpty()) {
                 Toast.makeText(this, "Por favor, ingresa todos los datos.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
             try {
-                // Convertir los valores a números
                 val sueldoBasico = sueldoBasicoTexto.toDouble()
                 val antiguedad = antiguedadTexto.toInt()
 
-                // Calcular el bono
                 val bono = if (antiguedad > 10) {
-                    sueldoBasico * 0.10  // Bono del 10% si antigüedad > 10 años
+                    sueldoBasico * 0.10
                 } else {
-                    sueldoBasico * 0.05  // Bono del 5% si antigüedad <= 10 años
+                    sueldoBasico * 0.05
                 }
 
-                // Calcular el total
                 val total = sueldoBasico + bono
 
-                // Mostrar el resultado final
                 resultadoText.text = "El total es: $total"
                 resultadoText.visibility = TextView.VISIBLE
 
             } catch (e: NumberFormatException) {
-                // Mostrar un mensaje si algún dato no es válido
                 Toast.makeText(this, "Por favor, ingresa números válidos.", Toast.LENGTH_SHORT).show()
             }
         }

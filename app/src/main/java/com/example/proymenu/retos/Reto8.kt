@@ -26,28 +26,22 @@ class Reto8 : AppCompatActivity() {
         val btnEvaluarNota = findViewById<MaterialButton>(R.id.btn_evaluar_nota)
         val resultadoText = findViewById<TextView>(R.id.resultado_text)
 
-        // Configuración del botón para evaluar la nota
         btnEvaluarNota.setOnClickListener {
-            // Obtener el valor ingresado
             val notaTexto = notaInput.text.toString()
 
-            // Validar que el campo no esté vacío
             if (notaTexto.isEmpty()) {
                 Toast.makeText(this, "Por favor, ingresa una nota.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
             try {
-                // Convertir el valor a un número
                 val nota = notaTexto.toDouble()
 
-                // Validar el rango de la nota
                 if (nota < 1 || nota > 20) {
                     Toast.makeText(this, "La nota debe estar entre 1 y 20.", Toast.LENGTH_SHORT).show()
                     return@setOnClickListener
                 }
 
-                // Determinar la calificación en letra
                 val calificacion = when {
                     nota <= 5 -> "E"
                     nota <= 10.5 -> "D"
@@ -56,12 +50,10 @@ class Reto8 : AppCompatActivity() {
                     else -> "A"
                 }
 
-                // Mostrar el resultado
                 resultadoText.text = "La nota en letra es: $calificacion"
                 resultadoText.visibility = TextView.VISIBLE
 
             } catch (e: NumberFormatException) {
-                // Mostrar un mensaje si el valor no es un número válido
                 Toast.makeText(this, "Por favor, ingresa un número válido.", Toast.LENGTH_SHORT).show()
             }
         }

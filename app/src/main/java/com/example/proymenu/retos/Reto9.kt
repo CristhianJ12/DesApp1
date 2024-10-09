@@ -26,22 +26,17 @@ class Reto9 : AppCompatActivity() {
         val btnEvaluarDia = findViewById<MaterialButton>(R.id.btn_evaluar_dia)
         val resultadoText = findViewById<TextView>(R.id.resultado_text)
 
-        // Configuración del botón para evaluar el día
         btnEvaluarDia.setOnClickListener {
-            // Obtener el valor ingresado
             val numeroTexto = numeroInput.text.toString()
 
-            // Validar que el campo no esté vacío
             if (numeroTexto.isEmpty()) {
                 Toast.makeText(this, "Por favor, ingresa un número.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
             try {
-                // Convertir el valor a un número
                 val numero = numeroTexto.toInt()
 
-                // Determinar el día de la semana
                 val dia = when (numero) {
                     1 -> "Lunes"
                     2 -> "Martes"
@@ -53,12 +48,10 @@ class Reto9 : AppCompatActivity() {
                     else -> "Número inválido. Debe estar entre 1 y 7."
                 }
 
-                // Mostrar el resultado
                 resultadoText.text = dia
                 resultadoText.visibility = TextView.VISIBLE
 
             } catch (e: NumberFormatException) {
-                // Mostrar un mensaje si el valor no es un número válido
                 Toast.makeText(this, "Por favor, ingresa un número válido.", Toast.LENGTH_SHORT).show()
             }
         }

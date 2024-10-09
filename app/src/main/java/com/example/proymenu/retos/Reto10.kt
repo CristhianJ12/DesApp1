@@ -26,22 +26,17 @@ class Reto10 : AppCompatActivity() {
         val btnEvaluarNumero = findViewById<MaterialButton>(R.id.btn_evaluar_numero)
         val resultadoText = findViewById<TextView>(R.id.resultado_text)
 
-        // Configuración del botón para evaluar el número
         btnEvaluarNumero.setOnClickListener {
-            // Obtener el valor ingresado
             val numeroTexto = numeroInput.text.toString()
 
-            // Validar que el campo no esté vacío
             if (numeroTexto.isEmpty()) {
                 Toast.makeText(this, "Por favor, ingresa un número.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
             try {
-                // Convertir el valor a un número
                 val numero = numeroTexto.toInt()
 
-                // Evaluar el número y determinar el mensaje
                 val mensaje = when (numero) {
                     in 0..3 -> "Correcto, el número se encuentra entre 0 y 3."
                     in 4..7 -> "Correcto, el número se encuentra entre 4 y 7."
@@ -49,12 +44,10 @@ class Reto10 : AppCompatActivity() {
                     else -> "Error, ingreso un valor fuera del rango indicado."
                 }
 
-                // Mostrar el resultado
                 resultadoText.text = mensaje
                 resultadoText.visibility = TextView.VISIBLE
 
             } catch (e: NumberFormatException) {
-                // Mostrar un mensaje si el valor no es un número válido
                 Toast.makeText(this, "Por favor, ingresa un número válido.", Toast.LENGTH_SHORT).show()
             }
         }

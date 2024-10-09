@@ -26,34 +26,27 @@ class Reto6 : AppCompatActivity() {
         val btnEvaluar = findViewById<MaterialButton>(R.id.btn_evaluar)
         val resultadoText = findViewById<TextView>(R.id.resultado_text)
 
-        // Configuración del botón para evaluar el número
         btnEvaluar.setOnClickListener {
-            // Obtener el valor ingresado
             val numeroTexto = numeroInput.text.toString()
 
-            // Validar que el campo no esté vacío
             if (numeroTexto.isEmpty()) {
                 Toast.makeText(this, "Por favor, ingresa un número.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
             try {
-                // Convertir el valor a un número
                 val numero = numeroTexto.toDouble()
 
-                // Evaluar el número
                 val resultado = when {
                     numero == 0.0 -> "El número es cero."
                     numero > 0 -> "El número es positivo."
                     else -> "El número es negativo."
                 }
 
-                // Mostrar el resultado
                 resultadoText.text = resultado
                 resultadoText.visibility = TextView.VISIBLE
 
             } catch (e: NumberFormatException) {
-                // Mostrar un mensaje si el valor no es un número válido
                 Toast.makeText(this, "Por favor, ingresa un número válido.", Toast.LENGTH_SHORT).show()
             }
         }

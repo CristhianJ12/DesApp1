@@ -26,34 +26,27 @@ class Reto1 : AppCompatActivity() {
         val resultadoTextView = findViewById<TextView>(R.id.resultado)
         val btnCalcularArea = findViewById<MaterialButton>(R.id.btn_CalcularArea)
 
-        // Configurar la acción al hacer clic en el botón
         btnCalcularArea.setOnClickListener {
-            // Obtener el valor del EditText (lado)
             val ladoText = ladoEditText.text.toString()
 
-            // Verificar que no esté vacío
             if (ladoText.isNotEmpty()) {
                 try {
-                    // Convertir el valor ingresado a Double
+
                     val lado = ladoText.toDouble()
 
-                    // Calcular el área del cuadrado (lado * lado)
+
                     val area = lado * lado
 
-                    // Mostrar el resultado en el TextView
                     resultadoTextView.text = "Área: $area"
 
                 } catch (e: NumberFormatException) {
-                    // Mostrar mensaje si el formato es incorrecto
                     Toast.makeText(this, "Por favor, ingresa un número válido", Toast.LENGTH_SHORT)
                         .show()
                 }
             } else {
-                // Mostrar un mensaje si el campo está vacío
                 Toast.makeText(this, "Por favor, ingresa el lado del cuadrado", Toast.LENGTH_SHORT)
                     .show()
             }
         }
-        //supportActionBar?.hide() -> Para ocultar el titulo del proyecto
     }
 }

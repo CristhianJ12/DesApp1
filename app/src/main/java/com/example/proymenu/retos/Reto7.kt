@@ -26,31 +26,25 @@ class Reto7 : AppCompatActivity() {
         val btnCalcularImporte = findViewById<MaterialButton>(R.id.btn_calcular_importe)
         val resultadoText = findViewById<TextView>(R.id.resultado_text)
 
-        // Configuración del botón para calcular el importe
         btnCalcularImporte.setOnClickListener {
-            // Obtener el valor ingresado
             val consumoTexto = consumoInput.text.toString()
 
-            // Validar que el campo no esté vacío
             if (consumoTexto.isEmpty()) {
                 Toast.makeText(this, "Por favor, ingresa el consumo.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
             try {
-                // Convertir el valor a un número
                 val consumo = consumoTexto.toDouble()
 
-                // Inicializar la variable importe
                 var importe: Double
 
-                // Calcular el importe a pagar usando condicionales anidados
                 if (consumo < 100) {
-                    importe = consumo // Importe igual al consumo
+                    importe = consumo
                 } else if (consumo <= 500) {
-                    importe = consumo * 1.5 // Importe al 150%
+                    importe = consumo * 1.5
                 } else {
-                    importe = consumo * 2 // Importe al 200%
+                    importe = consumo * 2
                 }
 
                 // Mostrar el resultado
@@ -58,7 +52,6 @@ class Reto7 : AppCompatActivity() {
                 resultadoText.visibility = TextView.VISIBLE
 
             } catch (e: NumberFormatException) {
-                // Mostrar un mensaje si el valor no es un número válido
                 Toast.makeText(this, "Por favor, ingresa un número válido.", Toast.LENGTH_SHORT).show()
             }
         }
